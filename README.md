@@ -112,11 +112,3 @@ This project was developed with the assistance of several AI tools:
 5. Generate and review the AI-created changelog
 6. Publish the changelog
 7. View your published changelog in the Public View
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
