@@ -1,109 +1,35 @@
 [
   {
-    "version": "1.2.3",
+    "version": "1.0.3",
     "entries": [
-      "Improve the content and structure of the README file for enhanced user readability.",
-      "Resolve issue with recommended posts display for a smoother user experience.",
-      "Conduct testing to ensure product stability and reliability.",
-      "Create a new README file to provide users with up-to-date information about the project."
+      "Added a new README.md file for improved project documentation.",
+      "Fixed the issue with recommended posts display.",
+      "Resolved testing issues to ensure smoother functionality."
     ],
-    "createdAt": "2025-03-14T21:02:19.712Z",
-    "repositoryUrl": "https://github.com/jabistro/flashback"
+    "repositoryUrl": "https://github.com/jabistro/flashback",
+    "createdAt": "2025-03-14T23:48:40.282Z"
   },
   {
-    "version": "1.1.1",
+    "version": "2.0.7",
     "entries": [
-      "Add a new README.md file for detailed information and instructions.",
-      "Fix the issue with recommended posts display.",
-      "Include a fix for testing functionality.",
-      "Update the README.md file for improved content and clarity."
+      "Added autofocus functionality to the \"Generate\" button for a smoother user experience.",
+      "Updated the logo with a new design for a refreshed look.",
+      "Removed the alert notification upon file upload completion.",
+      "Adjusted localhost addresses to now display the backend address for improved clarity and functionality."
     ],
-    "createdAt": "2025-03-14T20:46:30.374Z",
-    "repositoryUrl": "https://github.com/jabistro/flashback"
+    "repositoryUrl": "https://github.com/jabistro/intellipics",
+    "createdAt": "2025-03-14T23:49:17.898Z"
   },
   {
-    "version": "1.0.0",
+    "version": "3.0.3",
     "entries": [
-      "Added a new render script for enhanced visualization capabilities.",
-      "Fixed a bug related to the 'joined' date not displaying correctly upon creation.",
-      "Improved user experience by fixing cascade deletion issues and signup bugs, and refactoring the user albums page.",
-      "Enhanced system performance through cleanup and idol optimization.",
-      "Implemented joined date feature for better user account tracking."
-    ],
-    "createdAt": "2025-03-14T20:39:25.132Z",
-    "repositoryUrl": "https://github.com/jabistro/survivr"
-  },
-  {
-    "version": "6.6.6",
-    "entries": [
-      "Added a render script for improved rendering functionality.",
-      "Fixed a bug related to the 'joined' date on user creation.",
-      "Improved user experience by fixing cascade delete for albums to images, resolving a signup bug, and refactoring the user albums page."
+      "Fixed a bug related to the 'joined' date not being set correctly on user creation.",
+      "Added functionality to set the 'joined' date for users.",
+      "Improved user experience by fixing bugs related to cascade deletion in albums and images, resolving a signup issue, and refactoring the user albums page for better performance.",
+      "Added a new render script to enhance rendering capabilities.",
+      "Streamlined the codebase by performing cleanup and refactoring tasks."
     ],
     "repositoryUrl": "https://github.com/jabistro/survivr",
-    "createdAt": "2025-03-14T21:30:02.663Z"
-  },
-  {
-    "version": "7.7.7",
-    "entries": [
-      "Add a new README file for improved project documentation.",
-      "Fix issue with recommended posts display to show correct content.",
-      "Resolve a bug that caused recommended posts to display incorrectly."
-    ],
-    "repositoryUrl": "https://github.com/jabistro/flashback",
-    "createdAt": "2025-03-14T21:38:39.874Z"
-  },
-  {
-    "version": "7.7.8",
-    "entries": [
-      "Improved recommended posts functionality to fix issues.",
-      "Created a new README.md file for enhanced project documentation.",
-      "Conducted testing for better performance and reliability."
-    ],
-    "repositoryUrl": "https://github.com/jabistro/flashback",
-    "createdAt": "2025-03-14T21:54:33.622Z"
-  },
-  {
-    "version": "8.9.8",
-    "entries": [
-      "Added a README.md file for project documentation.",
-      "Fixed recommended posts functionality.",
-      "Improved testing procedures."
-    ],
-    "repositoryUrl": "https://github.com/jabistro/flashback",
-    "createdAt": "2025-03-14T21:58:27.363Z"
-  },
-  {
-    "version": "1.2.0",
-    "entries": [
-      "Improved README.md content with updated information and recommended posts fix.",
-      "Added a new README.md file for enhanced project documentation.",
-      "Addressed issues with recommended posts to ensure accurate recommendations.",
-      "Streamlined testing process for better efficiency."
-    ],
-    "repositoryUrl": "https://github.com/jabistro/flashback",
-    "createdAt": "2025-03-14T22:21:02.235Z"
-  },
-  {
-    "version": "8.9.7",
-    "entries": [
-      "Improved README.md file with updated content and fixed recommended posts.",
-      "Addressed issues with recommended posts functionality.",
-      "Created a new README.md file for enhanced user guidance.",
-      "Conducted testing to ensure platform functionality.",
-      "Made various updates to README.md for better user experience."
-    ],
-    "repositoryUrl": "https://github.com/jabistro/flashback",
-    "createdAt": "2025-03-14T22:52:19.125Z"
-  },
-  {
-    "version": "6.7.0",
-    "entries": [
-      "Improved the README.md file by updating and adding content for better user guidance.",
-      "Fixed issues with recommended posts display to ensure accurate recommendations.",
-      "Enhanced testing processes for improved reliability and accuracy."
-    ],
-    "repositoryUrl": "https://github.com/jabistro/flashback",
-    "createdAt": "2025-03-14T22:54:26.480Z"
+    "createdAt": "2025-03-14T23:49:49.863Z"
   }
 ]

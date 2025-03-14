@@ -142,6 +142,7 @@ const DeveloperTool = () => {
             setVersion('');
             setCommits([]);
             setGeneratedEntries([]);
+            setRepositoryUrl('');
             setShowSuccess(true);
         } catch (error) {
             const errorMessage = error.response?.data?.error || error.message;
