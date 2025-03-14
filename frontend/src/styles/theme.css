@@ -1,0 +1,453 @@
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .header h1 {
+    margin: 0;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    font-weight: 600;
+  }
+
+  .logo-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin: 0;
+    position: relative;
+    top: 4px;
+  }
+
+  .header-title {
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.2s ease;
+  }
+
+  .header-title:hover {
+    opacity: 0.8;
+  }
+  
+  .header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .header nav a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 2px 0;
+  }
+
+  .header nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+
+  .header nav a:hover::after {
+    width: 100%;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .developer-tool {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .tool-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .reset-button {
+    padding: 0.5rem 1rem;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+
+  .reset-button:hover {
+    background-color: #5a6268;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  .input-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  .input-group input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  .input-group button {
+    align-self: flex-start;
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+  .button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .recent-commits {
+    margin-top: 2rem;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+
+  .commit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .commit-item {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+
+  .commit-item p {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.95rem;
+  }
+
+  .commit-item small {
+    color: #666;
+    display: block;
+  }
+  
+  .loading {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+  }
+  
+  .error-message {
+    padding: 20px;
+    background-color: #ffebee;
+    border-radius: 4px;
+    margin: 20px 0;
+    color: #d32f2f;
+  }
+  
+  .public-changelog {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .changelog-entry {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    position: relative;
+  }
+
+  .changelog-entry .delete-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.4rem 0.8rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .changelog-entry .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .changelog-entry h2 {
+    color: #333;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .changelog-entry time {
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  .changes-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 1rem 0;
+  }
+  
+  .changes-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .changes-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .changes-list li::before {
+    content: "•";
+    color: #007bff;
+    margin-right: 0.5rem;
+  }
+
+  .home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .hero {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 3rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+
+  .hero .subtitle {
+    font-size: 1.25rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .features {
+    margin-bottom: 4rem;
+  }
+
+  .features h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+  }
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .feature-card h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+  }
+
+  .feature-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .cta {
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  .cta h2 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+  }
+
+  .button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .button.primary {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+
+  .button.secondary {
+    background-color: #6c757d;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+
+  .button.primary:hover {
+    background-color: #0056b3;
+  }
+
+  .button.secondary:hover {
+    background-color: #5a6268;
+  }
+
+  .changelog-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+    font-size: 0.9em;
+  }
+
+  .repository-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .repository-name {
+    font-weight: 500;
+    color: #2c3e50;
+    padding: 0.2rem 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    font-family: monospace;
+  }
+
+  .repository-link {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9em;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+
+  .repository-link:hover {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .changelog-entry time {
+    color: #666;
+    font-size: 0.9em;
+  }
+
+  .notification-banner {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: #d4edda;
+    color: #155724;
+    text-align: center;
+    z-index: 1000;
+    animation: fadeInOut 5s forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .notification-banner a {
+    color: #155724;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  .notification-banner a:hover {
+    color: #0a2c12;
+  }
+
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-100%); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-100%); }
+  }
