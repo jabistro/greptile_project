@@ -435,14 +435,24 @@
     gap: 0.5rem;
   }
 
-  .notification-banner a {
+  .notification-banner.success {
+    background-color: #d4edda;
     color: #155724;
+  }
+
+  .notification-banner.delete {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+
+  .notification-banner a {
+    color: inherit;
     text-decoration: underline;
     font-weight: 600;
   }
 
   .notification-banner a:hover {
-    color: #0a2c12;
+    opacity: 0.8;
   }
 
   @keyframes fadeInOut {

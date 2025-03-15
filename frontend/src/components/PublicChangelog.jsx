@@ -14,16 +14,28 @@ const getRepositoryName = (url) => {
 
 const PublicChangelog = () => {
   const { changelogs, loading, error, fetchChangelogs, deleteChangelog } = useChangelog();
+  const [showDeleteSuccess, setShowDeleteSuccess] = React.useState(false);
 
   React.useEffect(() => {
     fetchChangelogs();
   }, []);
+
+  React.useEffect(() => {
+    let timer;
+    if (showDeleteSuccess) {
+      timer = setTimeout(() => {
+        setShowDeleteSuccess(false);
+      }, 5000);
+    }
+    return () => clearTimeout(timer);
+  }, [showDeleteSuccess]);
 
   const handleDelete = async (version, repositoryUrl) => {
     if (window.confirm(`Are you sure you want to delete changelog version ${version}?`)) {
       try {
         await deleteChangelog(version, repositoryUrl);
         await fetchChangelogs();
+        setShowDeleteSuccess(true);
       } catch (err) {
         console.error('Error deleting changelog:', err);
       }
@@ -57,6 +69,11 @@ const PublicChangelog = () => {
 
   return (
     <div className="public-changelog">
+      {showDeleteSuccess && (
+        <div className="notification-banner delete">
+          Changelog was successfully deleted.
+        </div>
+      )}
       <h1>Release Notes</h1>
       {[...changelogs]
         .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
