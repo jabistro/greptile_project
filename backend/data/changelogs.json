@@ -31,5 +31,16 @@
     ],
     "repositoryUrl": "https://github.com/jabistro/survivr",
     "createdAt": "2025-03-14T23:49:49.863Z"
+  },
+  {
+    "version": "1.0.1",
+    "entries": [
+      "Added a complete dashboard on the frontend with performance statistics.",
+      "Implemented the dashboard functionality on the backend, including affiliate statistics and user performance tracking.",
+      "Introduced a new performance scene for enhanced user experience.",
+      "Integrated an admin scene with the addition of admins, user performance details, and a DataGridCustomColumnMenu component on the backend."
+    ],
+    "repositoryUrl": "https://github.com/jabistro/ecomvision",
+    "createdAt": "2025-03-14T23:55:36.843Z"
   }
 ]

@@ -2,6 +2,17 @@
 
 A modern web application that generates clear, concise changelogs from Git repository commits using AI. This tool helps developers maintain professional and user-friendly documentation of their project changes.
 
+## Screenshots
+
+### Home Page
+![Home Page](frontend/screenshots/CG1.png)
+
+### Developer Tool
+![Developer Tool](frontend/screenshots/CG2.png)
+
+### Public Changelog View
+![Public Changelog View](frontend/screenshots/CG3.png)
+
 ## Technical Decisions
 
 ### Frontend
